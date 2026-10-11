@@ -1,0 +1,419 @@
+
+html {
+    scroll-behavior: smooth;
+}
+.main1{
+    background-color:beige;
+    height: 670px;
+}
+.main{
+    margin-top: 100px;
+    margin-left: 140px;
+    border: 1px solid;
+    border-color: rgb(90, 90, 90);
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 8px 20px;
+    background-color: aliceblue;
+}
+.main h4{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: rgb(77, 51, 47);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+#main2{
+    display: flex;
+}
+#power{
+    margin-top: 50px;
+    margin-left: 140px;
+    font-size: 70px;
+    color: rgb(69, 69, 243);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#main2 img{
+    height: 500px;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 10%;
+}
+.text p{
+    margin-left: 140px;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+/* From Uiverse.io by ryota1231 */ 
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: rgb(87, 227, 180);
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-left: 140px;
+  margin-top: 70px;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+------------------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Background Section */
+.feature{
+  background-color: #111317; /* Dark charcoal background */
+  color: #ffffff;
+  padding: 100px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Layout */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.section-tag {
+  color: #7a88ff; /* Soft purple/blue tag color */
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.header-right {
+  flex: 1;
+  max-width: 480px;
+  padding-bottom: 10px;
+}
+
+.section-desc {
+  color: #9297a5;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* 4-Column Grid Container */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid #232630; /* Outer container border */
+  border-radius: 4px;
+  background-color: #16181e;
+}
+
+/* Individual Feature Card */
+.feature-card {
+  padding: 35px 28px 45px 28px;
+  border-right: 1px solid #232630; /* Vertical divider lines */
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:last-child {
+  border-right: none;
+}
+
+/* Card Elements */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.card-icon {
+  width: 22px;
+  height: 22px;
+  color: #8fa0ff;
+}
+
+.card-num {
+  font-size: 0.85rem;
+  color: #555b6e;
+  font-family: monospace;
+}
+
+.card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.card-text {
+  color: #8c92a4;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* Responsive adjustments for mobile/tablet */
+@media (max-width: 900px) {
+  .features-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    border-right: none;
+    border-bottom: 1px solid #232630;
+  }
+
+  .feature-card:last-child {
+    border-bottom: none;
+  }
+}
+-----------------------------------------------------------------------------------------------
+.main3{
+  height: 790px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Background Section */
+.testimonials-section {
+  background-color: #f5f3ee; /* Warm cream background */
+  padding: 90px 40px;
+  color: #1a1a1a;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.section {
+  font-size: 3.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  
+}
+
+.rating-badge {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+/* Card Grid Layout */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Base Card Style */
+.testimonial-card {
+  background-color: #f1efea;
+  border: 1px solid #e0ddd6;
+  border-radius: 20px;
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+}
+
+/* Featured (Middle) Card */
+.testimonial-card.featured {
+  background-color: #F1EFEA; /* Light lavender tint */
+  border:1px sol ;
+}
+
+/* Content & Text */
+.quote-icon {
+  margin-bottom: 36px;
+}
+
+.quote-text {
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #1a1a1a;
+  letter-spacing: -0.3px;
+}
+
+/* User Profile Block at Bottom */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.user-role {
+  font-size: 0.85rem;
+  color: #666666;
+  margin-top: 2px;
+}
+
+.testimonial-card.featured .user-role {
+  color: #5b6280; /* Slightly bluer muted text for middle card */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .testimonials-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    min-height: auto;
+  }
+}

@@ -1,0 +1,199 @@
+html {
+    scroll-behavior: smooth;
+}
+.category{
+    height: 780px;
+    background-color: #3157E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last{
+    color: aliceblue;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.last p{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.butt{
+    margin-top: 400px;
+}
+/* ---------------------------------------------------------- */
+ .fort{
+   height: 300px;
+   background-color: #17191E;
+   color: whitesmoke;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Footer Section Outer Styling */
+.site-footer {
+  background-color: #121318; /* Dark charcoal background */
+  color: #ffffff;
+  position: relative;
+}
+
+/* Top Accent Line */
+.footer-blue-accent {
+  height: 4px;
+  background-color: #3b82f6; /* Bright blue top line */
+  width: 100%;
+}
+
+/* Inner Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 40px 40px 40px;
+}
+
+/* Main Row Layout */
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+/* Brand Section */
+.footer-brand {
+  max-width: 340px;
+}
+
+.footer-logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-degree {
+  color: #3b82f6;
+  font-size: 1.1rem;
+  margin-left: 1px;
+}
+
+.footer-tagline {
+  color: #8e939e;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Section Column Labels */
+.col-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #5d6370;
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* Contact Items (Stacked Vertically) */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-list a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+  color: #ffffff;
+}
+
+/* Social Items (Side-by-Side Row) */
+.social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.social-list a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.social-list a:hover {
+  color: #ffffff;
+}
+
+/* Divider Line */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #22252e;
+  margin-bottom: 32px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.copyright {
+  color: #5d6370;
+  font-size: 0.95rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 24px;
+}
+
+.legal-links a {
+  color: #5d6370;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Scaling for Smaller Screens */
+@media (max-width: 850px) {
+  .footer-main {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .social-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
